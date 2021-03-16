@@ -1,7 +1,8 @@
 $accent: #fcd7b6;
 $default: #243f4d;
 $title: #1a1a1a;
-
+$unaccent:#fef7f0;
+$bgbtn: #a3bbc8;
 
 
 %poppins{
@@ -27,6 +28,14 @@ $title: #1a1a1a;
 %dmsans-700{
   font-family: 'DMSans-Bold', sans-serif;
   font-weight: 700;
+}
+
+%btn{
+  padding: 12px 15px;
+  color: #fff;
+  background-color: $bgbtn;
+  border: none;
+  cursor: pointer;
 }
 
 
