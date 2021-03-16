@@ -5,6 +5,7 @@
 
 .header{
   &__wrapper{
+    max-width: 1770px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -191,6 +192,59 @@
       color: #7b7b7b;
     }
     
+  }
+
+
+  .top-slider{
+    &__container{
+      max-width: 1770px;
+      background-color: $accent;
+    }
+    
+    &__title{
+      @extend %rubik-500;
+      font-size: 72px;
+      line-height: 70px;
+      color: $default;
+      max-width: 470px;
+      margin-bottom: 38px;  
+    }
+    &__content{
+      padding-left: 300px;
+      padding-top: 225px;
+      margin-right: 60px;
+    }
+    &__text{
+      @extend %rubik-400;
+      font-size: 18px;
+      color: #4f6b77;
+      max-width: 370px;
+      margin-bottom: 40px;
+    }
+    &__link{
+      display: block;
+      width: 200px;
+      @extend %btn;
+      @extend %rubik-500;
+      font-size: 15px;
+      line-height: 12px;
+      padding: 20px 0 20px 25px;
+
+      position: relative;
+      &::before{
+        content: '';
+        width: 23px;
+        height: 10px;
+        top: 0;
+        right: 16px;
+        transform: translateY(25px);
+        background-image: url('../images/slider/arrow.svg');
+        position: absolute;
+      }
+    }
+    &__img{
+      display: block;
+    }
   }
 
 
