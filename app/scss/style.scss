@@ -1,6 +1,7 @@
 @import 'vars';
 @import 'fonts';
 @import 'reset';
+@import 'libs';
 @import 'global';
 
 .header{
@@ -30,7 +31,7 @@
 }
 
 .menu{
-  padding-left: 40px;
+  padding-left: 180px;
   &__list{
    display: flex;
    justify-content: center;
@@ -196,11 +197,22 @@
 
 
   .top-slider{
+    background-image: url('../images/top-slider-bg.png');
+    background-color: $accent;
+    background-repeat: no-repeat;
+    background-size: 635px 635px;
+    background-position: 1000px 100px;
+    padding: 225px 0 275px;
     &__container{
       max-width: 1770px;
-      background-color: $accent;
     }
-    
+    &__content{
+      padding-left: 300px;
+      margin-right: 60px;
+    }
+    &__box{
+      display: flex;
+    }
     &__title{
       @extend %rubik-500;
       font-size: 72px;
@@ -209,11 +221,6 @@
       max-width: 470px;
       margin-bottom: 38px;  
     }
-    &__content{
-      padding-left: 300px;
-      padding-top: 225px;
-      margin-right: 60px;
-    }
     &__text{
       @extend %rubik-400;
       font-size: 18px;
@@ -221,6 +228,12 @@
       max-width: 370px;
       margin-bottom: 40px;
     }
+    &__img{
+      max-width: 640px;
+      max-height: 263px;
+      transform: translateY(70px);
+    }
+   
     &__link{
       display: block;
       width: 200px;
@@ -229,7 +242,6 @@
       font-size: 15px;
       line-height: 12px;
       padding: 20px 0 20px 25px;
-
       position: relative;
       &::before{
         content: '';
@@ -242,8 +254,34 @@
         position: absolute;
       }
     }
-    &__img{
-      display: block;
+    .slick-dots{
+      display: flex;
+      justify-content: center;
+      transform: translateY(200px);
+      li{
+        margin: 0 8px;
+        button{
+        padding: 0;
+        font-size: 10px;
+        background-color: transparent;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: #fde3cc;
+        color: $default;
+        font-weight: 400;
+        border: none;
+        left: 0;
+        right: 0;
+        }
+        &__slick-active{
+          button{
+            background-color: #fff;
+            font-size: 12px;
+            font-weight: 700;
+          }
+        }
+      }
     }
   }
 
