@@ -279,12 +279,78 @@
             background-color: #fff;
             font-size: 12px;
             font-weight: 700;
+           
           }
         }
       }
     }
   }
 
+  .slider-bottom{
+    background-color: $unaccent;
+    padding: 45px 0;
+    &__inner{
+      display: flex;
+      justify-content: space-around;
+    }
+    &__item-time{
+      padding-left: 95px;
+      position: relative;
+      &::before{
+        content: url('../images/24img.png');
+        position: absolute;
+         width: 50px;
+         height: 50px;
+         top: 0;
+         left: 22px;
+         transform: translateY(10px);
+      }
+    }
+    &__item-deliv{
+      padding-left: 95px;
+      position: relative;
+      &::before{
+        content: url('../images/delivery-truck.png');
+        position: absolute;
+         width: 50px;
+         height: 50px;
+         top: 0;
+         left: 22px;
+         transform: translateY(10px);
+     }
+    }
+    &__item-card{
+        padding-left: 95px;
+      position: relative;
+      &::before{
+        content: url('../images/credit-card.png');
+        position: absolute;
+         width: 50px;
+         height: 50px;
+         top: 0;
+         left: 22px;
+         transform: translateY(10px);
+     }
+    }
+    &__img{
+display: i
+    }
+    &__title{
+      @extend %dmsans-700;
+      font-size: 18px;
+      line-height: 40px;
+      color: #414141;
+    }
+    &__text{
+      color: #585858;
+    }
+    &__text-support{
+      max-width: 200px;
+    }
+    &__text-secure{
+      max-width: 210px;
+    }
+  }
 
 
 @import 'media';
