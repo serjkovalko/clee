@@ -289,6 +289,7 @@
   .slider-bottom{
     background-color: $unaccent;
     padding: 45px 0;
+    margin-bottom: 75px;
     &__inner{
       display: flex;
       justify-content: space-around;
@@ -332,9 +333,9 @@
          transform: translateY(10px);
      }
     }
-    &__img{
-display: i
-    }
+    // &__img{
+
+    // }
     &__title{
       @extend %dmsans-700;
       font-size: 18px;
@@ -351,6 +352,119 @@ display: i
       max-width: 210px;
     }
   }
+
+
+  .intarier{
+    &__wrapper{
+      background-image: url('../images/video-intarier-bg.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      display: flex;
+      justify-content: center;align-items: center;
+    }
+    .play-btn{
+      width: 130px;
+      height: 130px;
+      display: inline-block;
+      margin: 185px auto;
+    }
+  }
+
+
+.categories-products{
+  display: grid;
+  min-height: 800px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 30px;
+  margin-bottom: 185px;
+  &__item{
+    height: 380px;
+    width: 270px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+    }
+
+  &__item-inner{
+    height: 380px;
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 35px;
+  }
+
+  &__image{
+ display: inline-block;
+ margin-bottom: 60px;
+  }
+  &__name{
+    @extend %dmsans-500;
+    }
+  &__price{
+    @extend %dmsans-700;
+    color: #a3bbc8;
+    }
+}
+
+.mix-box{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 75px;
+  
+  &__btn + .mix-box__btn{
+     margin-left: 30px;
+  }
+  &__btn{
+    display: block;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    @extend %dmsans-700;
+    color: #8b8b8b;
+     &:hover{
+      color: #1a1a1a;
+      cursor: pointer;
+     }
+  }
+ }
+.design{
+ &__items{
+   display: grid;
+   min-height: 530px;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(2, 1fr);
+   grid-gap: 30px;
+   margin-bottom: 120px;
+ }
+ &__item{
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: right center;
+   padding-top: 35px;
+   padding-left: 40px;
+   width: 370px;
+   height: 240px;
+ }
+ &__title,
+ &__subtitle{
+   font-size: 20px;
+   line-height: 20px;
+   margin-bottom: 5px;
+   @extend %dmsans-700;
+   color: #383838;
+ }
+ &__text{
+   margin-bottom: 15px;
+   color: #a9bfcb;
+   @extend %dmsans-700;
+ }
+
+}
+
 
 
 @import 'media';

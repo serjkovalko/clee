@@ -17,6 +17,16 @@ body{
   flex-grow: 1;
 }
 
+.title{
+  @extend %dmsans-700;
+  font-size: 36px;
+  line-height: 40px;
+  color: #191919;
+  margin-bottom: 38px;
+  text-align: center;
+}
+
+
 
 .container{
   max-width: 1200px;
