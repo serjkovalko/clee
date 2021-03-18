@@ -1,0 +1,47 @@
+$accent: #fcd7b6;
+$default: #243f4d;
+$title: #1a1a1a;
+$unaccent:#fef7f0;
+$bgbtn: #a3bbc8;
+
+
+%poppins{
+  font-family: 'Poppins-Bold', sans-serif;
+  font-weight: 700;
+}
+%rubik-400{
+  font-family: 'Rubik-Regular', sans-serif;
+  font-weight: 400;
+}
+%rubik-500{
+  font-family: 'Rubik-Medium', sans-serif;
+  font-weight: 500;
+} 
+%dmsans-400{
+  font-family: 'DMSans-Regular', sans-serif;
+  font-weight: 400;
+}
+%dmsans-500{
+  font-family: 'DMSans-Medium', sans-serif;
+  font-weight: 500;
+}
+%dmsans-700{
+  font-family: 'DMSans-Bold', sans-serif;
+  font-weight: 700;
+}
+
+%btn{
+  padding: 12px 15px;
+  color: #fff;
+  background-color: $bgbtn;
+  border: none;
+  cursor: pointer;
+}
+
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
+}
+
