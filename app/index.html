@@ -11,9 +11,9 @@
 <body>
 
   <header class="header">
-    <div class="header__wrapper">
+    <div class="header__wrapper wrapper">
       <a class="logo" href="#">
-        <img class="logo__img" src="images/logo.png" alt="logo" class="logo-img">
+        <img class="logo__img logo-img" src="images/logo.png" alt="logo">
         <span class="logo__title">Glee.</span>
       </a>
       <div class="container">
@@ -69,7 +69,22 @@
     <section class="top-slider">
       <div class="container top-slider__container">
         <div class="top-slider__inner">
-          <div class class="top-slider__item">
+          <div class="top-slider__item">
+            <div class="top-slider__box">
+              <div class="top-slider__content">
+                <h3 class="top-slider__title">
+                  SMART AND
+                  TRENDY
+                </h3>
+                <p class="top-slider__text">
+                  Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                </p>
+                <a class="top-slider__link base-link" href="#">Shop Now</a>
+              </div>
+              <img class="top-slider__img" src="images/slider/photo.png" alt="slide images">
+            </div>
+          </div>
+          <div class="top-slider__item">
             <div class="top-slider__box">
               <div class="top-slider__content">
                 <h3 class="top-slider__title">
@@ -84,22 +99,7 @@
               <img class="top-slider__img" src="images/slider/photo.png" alt="slide images">
             </div>
           </div>
-          <div class class="top-slider__item">
-            <div class="top-slider__box">
-              <div class="top-slider__content">
-                <h3 class="top-slider__title">
-                  SMART AND
-                  TRENDY
-                </h3>
-                <p class="top-slider__text">
-                  Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                </p>
-                <a class="top-slider__link" href="#">Shop Now</a>
-              </div>
-              <img class="top-slider__img" src="images/slider/photo.png" alt="slide images">
-            </div>
-          </div>
-          <div class class="top-slider__item">
+          <div class="top-slider__item">
             <div class="top-slider__box">
               <div class="top-slider__content">
                 <h3 class="top-slider__title">
@@ -146,10 +146,11 @@
           <button class="mix-box__btn" type="button" data-filter=".category-a">Furnitures</button>
           <button class="mix-box__btn" type="button" data-filter=".category-b">Chairs</button>
           <button class="mix-box__btn" type="button" data-filter=".category-c">Lighting</button>
-          <button class="mix-box__btn" type="button" data-filter=".category-c">Decor</button>
+          <button class="mix-box__btn" type="button" data-filter=".category-d">Decor</button>
         </div>
         <div class="categories-products">
-          <div class="categories-products__item">
+
+          <div class="categories-products__item mix category-c">
             <div class="categories-products__item-inner">
               <img class="categories-products__image" src="images/categories/wooden-radio.jpg" alt="">
               <h6 class="categories-products__name">Wooden radio</h6>
@@ -176,9 +177,10 @@
               </div>
             </div>
           </div>
-          <div class="categories-products__item">
+
+          <div class="categories-products__item mix category-b">
             <div class="categories-products__item-inner">
-              <img class="categories-products__image" src="images/categories/wooden-chair.jpg" alt="">
+              <img class="categories-products__image" src="images/categories/wooden-chair.jpg" alt="product">
               <h6 class="categories-products__name">Wooden chair</h6>
               <p class="categories-products__price">$29.00</p>
               <div class="categories-products__link-box">
@@ -203,9 +205,9 @@
               </div>
             </div>
           </div>
-          <div class="categories-products__item">
+          <div class="categories-products__item mix category-b">
             <div class="categories-products__item-inner">
-              <img class="categories-products__image" src="images/categories/white-chair.jpg" alt="">
+              <img class="categories-products__image" src="images/categories/white-chair.jpg" alt="product">
               <h6 class="categories-products__name">White chair</h6>
               <p class="categories-products__price">$29.00</p>
               <div class="categories-products__link-box">
@@ -230,9 +232,10 @@
               </div>
             </div>
           </div>
-          <div class="categories-products__item">
+
+          <div class="categories-products__item mix category-a">
             <div class="categories-products__item-inner">
-              <img class="categories-products__image" src="images/categories/retro-table.jpg" alt="">
+              <img class="categories-products__image" src="images/categories/retro-table.jpg" alt="product">
               <h6 class="categories-products__name">Retro table</h6>
               <p class="categories-products__price">$29.00</p>
               <div class="categories-products__link-box">
@@ -257,9 +260,10 @@
               </div>
             </div>
           </div>
-          <div class="categories-products__item">
+
+          <div class="categories-products__item mix category-d">
             <div class="categories-products__item-inner">
-              <img class="categories-products__image" src="images/categories/wooden-radio-bm.jpg" alt="">
+              <img class="categories-products__image" src="images/categories/wooden-radio-bm.jpg" alt="product">
               <h6 class="categories-products__name">Wooden radio</h6>
               <p class="categories-products__price">$29.00</p>
               <div class="categories-products__link-box">
@@ -284,9 +288,10 @@
               </div>
             </div>
           </div>
-          <div class="categories-products__item">
+
+          <div class="categories-products__item mix category-b">
             <div class="categories-products__item-inner">
-              <img class="categories-products__image" src="images/categories/wooden-chair-bm.jpg" alt="">
+              <img class="categories-products__image" src="images/categories/wooden-chair-bm.jpg" alt="product">
               <h6 class="categories-products__name">Wooden chair</h6>
               <p class="categories-products__price">$29.00</p>
               <div class="categories-products__link-box">
@@ -311,9 +316,9 @@
               </div>
             </div>
           </div>
-          <div class="categories-products__item">
+          <div class="categories-products__item mix category-b">
             <div class="categories-products__item-inner">
-              <img class="categories-products__image" src="images/categories/white-chair-bm.jpg" alt="">
+              <img class="categories-products__image" src="images/categories/white-chair-bm.jpg" alt="product">
               <h6 class="categories-products__name">White chair</h6>
               <p class="categories-products__price">$29.00</p>
               <div class="categories-products__link-box">
@@ -338,7 +343,7 @@
               </div>
             </div>
           </div>
-          <div class="categories-products__item">
+          <div class="categories-products__item mix category-a">
             <div class="categories-products__item-inner">
               <img class="categories-products__image" src="images/categories/retro-table-bm.jpg" alt="">
               <h6 class="categories-products__name">Retro table</h6>
@@ -369,6 +374,28 @@
       </div>
     </section>
 
+    <div class="light">
+      <div class="light-wrapper wrapper">
+        <div class="light-item__left">
+          <img class="light-item__left-image" src="images/light-1.png" alt="light">
+          <div class="light-item__content">
+            <h5 class="light-item__content-title">Mirum Notare Tellus</h5>
+            <p class="light-item__content-text">LEDCornBulb Lamp 5W 7W 10W 12W 15W E26 E27LEDCornLight</p>
+            <a class="light-item__content-link" href="#">View More</a>
+          </div>
+        </div>
+        <div class="light-item__right">
+          <img class="light-item__left-image" src="images/light-2.png" alt="light">
+          <div class="light-item__content light-content__right">
+            <h5 class="light-item__content-title">Malesuada Tempor
+              Euismod</h5>
+            <p class="light-item__content-text">50W 8000lm Compact Size for HID StreetLightReplacementLEDCornLight</p>
+            <a class="light-item__content-link" href="#">View More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <section class="design">
       <div class="container">
         <h4 class="title">New Design</h4>
@@ -377,35 +404,35 @@
           <button class="mix-box__btn" type="button" data-filter=".category-a">Furnitures</button>
           <button class="mix-box__btn" type="button" data-filter=".category-b">Chairs</button>
           <button class="mix-box__btn" type="button" data-filter=".category-c">Lighting</button>
-          <button class="mix-box__btn" type="button" data-filter=".category-c">Decor</button>
+          <button class="mix-box__btn" type="button" data-filter=".category-d">Decor</button>
         </div>
         <div class="design__items">
-          <div class="design__item" style="background-image: url('images/new-design/design-1.jpg');">
+          <div class="design__item mix category-b" style="background-image: url('images/new-design/design-1.jpg');">
             <h5 class="design__title">Beat Flat Pendant</h5>
             <h6 class="design__subtitle">Black</h6>
             <p class="design__text">Classic</p>
           </div>
-          <div class="design__item" style="background-image: url('images/new-design/design-2.jpg');">
+          <div class="design__item mix category-a" style="background-image: url('images/new-design/design-2.jpg');">
             <h5 class="design__title">Lampe Sur Pieds</h5>
             <h6 class="design__subtitle">Bamboo</h6>
             <p class="design__text">Classic</p>
           </div>
-          <div class="design__item" style="background-image: url('images/new-design/design-3.jpg');">
+          <div class="design__item mix category-a" style="background-image: url('images/new-design/design-3.jpg');">
             <h5 class="design__title">Rattan Rocking</h5>
             <h6 class="design__subtitle">Chair</h6>
             <p class="design__text">Classic</p>
           </div>
-          <div class="design__item" style="background-image: url('images/new-design/design-4.jpg');">
+          <div class="design__item mix category-c" style="background-image: url('images/new-design/design-4.jpg');">
             <h5 class="design__title">Rattan Rocking</h5>
             <h6 class="design__subtitle">Chair</h6>
             <p class="design__text">Classic</p>
           </div>
-          <div class="design__item" style="background-image: url('images/new-design/design-5.jpg');">
+          <div class="design__item mix category-d" style="background-image: url('images/new-design/design-5.jpg');">
             <h5 class="design__title">Rattan Rocking</h5>
             <h6 class="design__subtitle">Chair</h6>
             <p class="design__text">Classic</p>
           </div>
-          <div class="design__item" style="background-image: url('images/new-design/design-6.jpg');">
+          <div class="design__item mix category-a" style="background-image: url('images/new-design/design-6.jpg');">
             <h5 class="design__title">Lampe Sur Pieds</h5>
             <h6 class="design__subtitle">Bamboo</h6>
             <p class="design__text">Classic</p>
@@ -416,10 +443,95 @@
 
     <section class="intarier">
       <div class="intarier__wrapper">
-        <a class="video-intarier__popup">
+        <div class="video-intarier__popup">
           <a class="video-intarier__play" data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk">
             <img class="play-btn" src="images/icons/play-btn.png" alt="video play button">
           </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="insights">
+      <div class="container">
+        <div class="insights__inner">
+          <div class="insights-top">
+            <h3 class="title">Our Insights & Articles</h3>
+            <a class="insights-top__link" href="#">
+              View All
+            </a>
+          </div>
+          <div class="insights-items">
+
+            <div class="insights__item">
+              <img class="insights__image" src="images/insights-1.jpg" alt="photo">
+              <div class="insights__content">
+                <p class="insights__text">
+                  Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                </p>
+                <div class="insights__footer">
+                  <div class="insights__data">
+                    28 JANUARY, 2020
+                  </div>
+                  <div class="insights__admin">
+                    BY ADMIN
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="insights__item">
+              <img class="insights__image" src="images/insights-2.jpg" alt="photo">
+              <div class="insights__content">
+                <p class="insights__text">
+                  Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                </p>
+                <div class="insights__footer">
+                  <div class="insights__data">
+                    28 JANUARY, 2020
+                  </div>
+                  <div class="insights__admin">
+                    BY ADMIN
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="insights__item insights__item-block">
+              <img class="insights__image" src="images/insights_3.jpg" alt="photo">
+              <div class="insights__content">
+                <p class="insights__text">
+                  Rncididunt ut labore et dolore magna aliqua. Ut enim
+                </p>
+                <div class="insights__footer">
+                  <div class="insights__data">
+                    28 JANUARY, 2020
+                  </div>
+                  <div class="insights__admin">
+                    BY ADMIN
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <ul class="partners">
+            <li class="partners__item">
+              <img src="images/partners/1.png" alt="partners logotipe">
+            </li>
+            <li class="partners__item">
+              <img src="images/partners/2.png" alt="partners logotipe">
+            </li>
+            <li class="partners__item">
+              <img src="images/partners/3.png" alt="partners logotipe">
+            </li>
+            <li class="partners__item">
+              <img src="images/partners/4.png" alt="partners logotipe">
+            </li>
+            <li class="partners__item">
+              <img src="images/partners/5.png" alt="partners logotipe">
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
 
@@ -431,7 +543,7 @@
       <div class="footer-top">
         <div class="footer-top__item footer-top__contact">
           <a class="logo footer-top__logo" href="#">
-            <img class="logo__img" src="images/logo.png" alt="logo" class="logo-img">
+            <img class="logo__img logo-img" src="images/logo.png" alt="logo">
             <span class="logo__title">Glee.</span>
           </a>
           <div class="footer-top__address">
@@ -439,11 +551,12 @@
             Houston, TX 77032
           </div>
           <div class="footer-top__phone">
-            Telephone: +832-347-5843
+            Telephone:<a class="footer-top__phone-link" href="tel:+8323475843"> +832-347-5843</a>
           </div>
-          <div class="footer-top__email">
-            Email: contact@Glee.com
-          </div>
+          <p class="footer-top__email">Email:</p>
+          <a href="#">
+            contact@Glee.com
+          </a>
         </div>
         <div class="footer-top__item footer-top__nav">
           <h6 class="footer-top__title">
@@ -451,19 +564,19 @@
           </h6>
           <ul class="footer-top__list">
             <li class="footer-top__items">
-              <a class="footer-top__link href=" #">About us</a>
+              <a class="footer-top__link" href="#">About us</a>
             </li>
             <li class="footer-top__items">
-              <a class="footer-top__link href=" #">Return Policy</a>
+              <a class="footer-top__link" href="#">Return Policy</a>
             </li>
             <li class="footer-top__items">
-              <a class="footer-top__link href=" #">Our Blog</a>
+              <a class="footer-top__link" href="#">Our Blog</a>
             </li>
             <li class="footer-top__items">
-              <a class="footer-top__link href=" #">Contact Us</a>
+              <a class="footer-top__link" href="#">Contact Us</a>
             </li>
             <li class="footer-top__items">
-              <a class="footer-top__link href=" #">Terms & Condition</a>
+              <a class="footer-top__link" href="#">Terms & Condition</a>
             </li>
           </ul>
         </div>
@@ -473,16 +586,16 @@
           </h6>
           <ul class="footer-top__list">
             <li class="footer-top__items">
-              <a class="footer-top__link href=" #">Your Account</a>
+              <a class="footer-top__link" href="#">Your Account</a>
             </li>
             <li class="footer-top__items">
-              <a class="footer-top__link href=" #">Checkout</a>
+              <a class="footer-top__link" href="#">Checkout</a>
             </li>
             <li class="footer-top__items">
-              <a class="footer-top__link href=" #">Login</a>
+              <a class="footer-top__link" href="#">Login</a>
             </li>
             <li class="footer-top__items">
-              <a class="footer-top__link href=" #">Register</a>
+              <a class="footer-top__link" href="#">Register</a>
             </li>
           </ul>
         </div>
