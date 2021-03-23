@@ -26,10 +26,41 @@ body{
   text-align: center;
 }
 
-
-
 .container{
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.breadcrumbs{
+  display: flex;
+  justify-content: center;
+  &__list{
+    display: flex;
+    text-align: center;
+  }
+  &__item{
+    padding-right: 20px;
+    color: #8b8f94;
+    font-size: 14px;
+    line-height: 24px;
+    position: relative;
+    &::after{
+      content: "/";
+      position: absolute;
+      top: 1px;
+      right: 6px;
+      width: 8px;
+      height: 14px;
+    }
+    &:last-child{
+      padding-right: 0;
+      &::after{
+        display: none;
+      }
+    }
+  }
+  &__link{
+    color: inherit;
+  }
 }
