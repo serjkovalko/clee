@@ -64,3 +64,27 @@ body{
     color: inherit;
   }
 }
+
+.pagination{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  &__list{
+    display: flex;
+  }
+ &__link{
+   padding: 20px 25px;
+   border: 1px solid $bgbtn;
+   margin: 0 8px;
+ }
+ &__link--active{
+   background-color: $bgbtn;
+ }
+  &__prev,
+  &__next{
+   padding: 15px 20px;
+   border: 1px solid $bgbtn;
+   margin: 0 8px;
+  }
+}
