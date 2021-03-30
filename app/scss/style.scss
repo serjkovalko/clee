@@ -1288,13 +1288,14 @@
 }
 
 .insights-product{
-  margin-top: 400px;
+  margin-top: 450px;
 }
 
 .product-page{
-  padding: 120px 0;
+  padding-top: 120px;
 }
 .product-one{
+  margin-bottom: 100px;
   &__inner{
     display: flex;
   }
@@ -1447,6 +1448,63 @@
   }
 }
 
+.product-tabs{
+  margin-bottom: 130px;
+&__top{
+  display: flex;
+  justify-content: center;
+}
+&__top-item{
+  @extend %btn;
+  width: 240px;
+  margin: 0 7px 40px 7px;
+  text-align: center;
+  color: $default;
+  font-size: 18px;
+  @extend %rubik-500;
+  border-radius: 5px;
+  background-color: #edf1f4;
+}
+&__top-item--active{
+  color: #fff;
+  background-color: $bgbtn;
+}
+&__content-item{
+  display: none;
+  &.product-tabs__content-item--active{
+    display: block;
+  }
+}
+}
+
+.related{
+  margin-bottom: 120px;
+  &__title{
+    color: $default;
+    text-align-last: left;
+    margin-bottom: 70px;
+  }
+  &-items{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 30px;
+  }
+  &-top{
+    display: flex;
+    justify-content: space-between;
+    &__arrow{
+      padding: 12px 12px;
+      border: 1px solid #edf1f4;
+      border-radius: 3px;
+      &.related-top__arrow--active{
+        border: 1px solid $bgbtn;
+      }
+      & + .related-top__arrow{
+        margin-left: 20px;
+      }
+    }
+  }
+}
 
 @import 'media';
 
