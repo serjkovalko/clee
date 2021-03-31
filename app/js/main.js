@@ -1,5 +1,15 @@
 $(function () {
 
+  $('.filter-category__label').on('click', function(){
+    $('.filter-category__label').removeClass('filter-category__label--active');
+    $(this).addClass('filter-category__label--active');
+  })
+
+  $('.pagination__link').on('click', function(){
+    $('.pagination__link').removeClass('pagination__link--active');
+    $(this).addClass('pagination__link--active');
+  });
+
   $('.related-top__arrow').on('click', function(){
     $('.related-top__arrow').removeClass('related-top__arrow--active');
     $(this).addClass('related-top__arrow--active');
