@@ -1666,6 +1666,149 @@
   margin-left: 0;
 }
 
+.contact{
+  &__inner{
+    padding-top: 120px;
+    text-align: center;
+  }
+  &__subtitle{
+    @extend %poppins-700;
+    color: $bgbtn;
+    margin-bottom: 10px;
+  }
+  &__title{
+    @extend %dmsans-700;
+    font-size: 36px;
+    color: $default;
+    margin-bottom: 75px;
+  }
+  &__items{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 120px;
+  }
+  &__item{
+    max-width: 370px;
+    width: 100%;
+    padding: 70px 55px 80px;
+    background-color: #fafafa;
+    transition: all .5s;
+    cursor: pointer;
+      &:hover{
+        path{
+          fill: #fff;
+        }
+      border: 1px solid $bgbtn;
+        .contact__item-imgbox{
+        background-color: $bgbtn;
+       }
+     }
+  }
+  &__item-title{
+    font-size: 20px;
+    @extend %dmsans-700;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  &__item-imgbox{
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    border-radius: 15px;
+    margin: 0 auto 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  &__form{
+    max-width: 620px;
+    width: 100%;
+  }
+  &__form-input{
+    padding: 20px 50px 20px 20px;
+    width: 300px;
+    border: none;
+    background-color: #fafafa;
+    margin-bottom: 25px;
+  }
+  &__form-input--name{
+    margin-right: 15px;
+   }
+ 
+    &__form-inner{
+      max-width: 620px;
+      width: 100%;
+      display: flex;
+    }
+    &__form-box--name{
+      min-width: 300px;
+      position: relative;
+      &::after{
+      content: '';
+      position: absolute;
+      background-image: url('../images/icons/form-user.svg');
+      background-repeat: no-repeat;
+      top: 28px;
+      right: 36px;
+      width: 14px;
+      height: 15px;
+    }
+  }
+      &__form-box--email{
+        position: relative;
+        min-width: 300px;
+        &::after{
+      content: '';
+      position: absolute;
+      background-image: url('../images/icons/form-email.svg');
+      background-repeat: no-repeat;
+      top: 30px;
+      right: 28px;
+      width: 18px;
+      height: 15px;
+    }
+  }
+  &__form-textarea--box{
+    position: relative;
+            &::after{
+      content: '';
+      position: absolute;
+      background-image: url('../images/icons/form-messeng.svg');
+      background-repeat: no-repeat;
+      top: 18px;
+      right: 32px;
+      width: 18px;
+      height: 15px;
+    }
+  }
+  &__form-textarea{
+    width: 100%;
+    background-color: #fafafa;
+    border: none;
+    padding: 16px 50px 0 20px;
+    height: 174px;
+    margin-bottom: 30px;
+    
+  }
+   &__form-btn{
+     @extend %btn, %poppins-700;
+     border-radius: 5px;
+     width: 200px;
+     height: 50px;
+     font-size: 15px;
+   }
+   &__form-wrapper{
+     margin-right: 50px;
+   }
+}
+#map{
+  width: 500px;
+  height: 335px;
+}
+.box-form{
+  display: flex;
+}
 
 
 @import 'media';
