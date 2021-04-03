@@ -10,10 +10,12 @@
     justify-content: space-between;
     align-items: center;
     padding: 48px 15px 46px;
+    flex-wrap: wrap;
   }
 }
 .wrapper{
  max-width: 1770px;
+ flex-wrap: wrap;
 }
 
 .logo{
@@ -34,6 +36,9 @@
 
 .menu{
   padding-left: 180px;
+  &__btn{
+    display: none;
+  }
   &__list{
    display: flex;
    justify-content: center;
@@ -52,6 +57,9 @@
 .user-nav{
     display: flex;
     align-items: center;
+    &--cont{
+      display: none;
+    }
   &__link + .user-nav__link{
     padding-left: 60px;
   }
@@ -622,6 +630,7 @@
 }
 .footer-top{
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 80px 0 75px;
   border-bottom: 1px solid #dae4e9;
@@ -665,6 +674,7 @@
     color: #1f2044;
     margin: 20px 0 15px;
     text-transform: uppercase;
+    pointer-events: none;
   }
   &__link{
     line-height: 32px;
@@ -689,6 +699,7 @@
 
   .footer-bottom{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 27px 0 30px;

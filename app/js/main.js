@@ -1,4 +1,14 @@
 $(function () {
+ 
+
+  $('.footer-top__title').on('click', function(){
+    $(this).next().slideToggle();
+    $(this).toggleClass('footer-top__list--active');
+  });
+
+  $('.menu__btn').on('click', function () {
+    $('.menu__list').toggleClass('menu-list--active');
+  });
 
   $('.filter-category__label').on('click', function(){
     $('.filter-category__label').removeClass('filter-category__label--active');
