@@ -216,6 +216,7 @@
     margin-bottom: 75px;
     &__inner{
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-around;
     }
     &__item-time{
@@ -416,6 +417,7 @@
 
 .light-wrapper{
    display: flex;
+   flex-wrap: nowrap;
    margin-bottom: 100px;
 }
 .light-item__left{
