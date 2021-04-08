@@ -1048,6 +1048,13 @@
        width: 270px;
        margin-right: 30px;
      }
+     &__filter-btn{
+       display: none;
+     }
+ 
+   }
+   .content{
+     display: flex;
    }
       .filter{
    &__item{
@@ -1098,7 +1105,6 @@
 
 .filter-category{
   &__label{
-    display: block;
     padding: 15px 0 15px 15px;
     display: flex;
     justify-content: space-between;
@@ -1125,15 +1131,15 @@
   }
 }
 
+
 .filter-price{
+   margin-bottom: 40px;
   &__label{
     display: flex;
     justify-content: space-between;
     padding-top: 20px;
-    
-  }
- 
-  &__block{
+    }
+ &__block{
     width: 270px;
     margin-bottom: 20px;
     display: flex;
@@ -1145,9 +1151,9 @@
   &__btn{
    @extend %btn;
    padding: 10px 30px;
+   margin-top: 40px;
+   margin-left: -100px;
    cursor: pointer;
-   margin-left: 200px;
-   margin-bottom: 40px;
   }
 }
 
